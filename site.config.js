@@ -16,7 +16,7 @@ const CONFIG = {
       href: "https://github.com/morethanmin/morethan-log",
     },
   ],
-  blog setting (required)
+  // blog setting (required)
   blog: {
     title: "무뼈의 뼈있는 이야기",
     description: "블로그에요!",
