@@ -8,7 +8,7 @@ const CONFIG = {
     email: "coff33b1@gmail.com",
 //    linkedin: "morethanmin",
     github: "im0b1",
-    instagram: "",
+    // instagram: "",
   },
   projects: [
     {
