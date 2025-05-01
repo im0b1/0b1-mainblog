@@ -6,9 +6,9 @@ const CONFIG = {
     role: "무뼈의 뼈있는 이야기",
     bio: "다양한 장르를 좋아합니다. 돈, 개발, 디자인, 역사, 철학 등등 근본이 없는 조합으로 끌리는 대로 파고들지만, 어쩌면 모든 건 유기적으로 연결될지 모르는 일입니다. 저는 21세기가 바라는 인재, 융복합적인 사고를 지닌 폴리매스형 백수입니다.",
     email: "coff33b1@gmail.com",
-//    linkedin: "morethanmin",
+    linkedin: "",
     github: "im0b1",
-    // instagram: "",
+    instagram: "",
   },
   projects: [
     {
