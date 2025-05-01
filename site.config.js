@@ -10,13 +10,13 @@ const CONFIG = {
     github: "im0b1",
     instagram: "",
   },
-  // projects: [
-  //   {
-  //     name: `morethan-log`,
-  //     href: "https://github.com/morethanmin/morethan-log",
-  //   },
-  // ],
-  // blog setting (required)
+  projects: [
+    {
+      name: `morethan-log`,
+      href: "https://github.com/morethanmin/morethan-log",
+    },
+  ],
+  blog setting (required)
   blog: {
     title: "무뼈의 뼈있는 이야기",
     description: "블로그에요!",
