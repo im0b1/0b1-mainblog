@@ -1,1 +1,1 @@
-export const DEFAULT_CATEGORY = "전체" as string
+export const DEFAULT_CATEGORY = "모든 아티클" as string
