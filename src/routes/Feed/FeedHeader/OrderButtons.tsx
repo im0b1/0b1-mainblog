@@ -22,13 +22,13 @@ const OrderButtons: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <a
-        data-active={currentOrder === "최신순"}
+        data-active={currentOrder === "desc"}
         onClick={() => handleClickOrderBy("desc")}
       >
         Desc
       </a>
       <a
-        data-active={currentOrder === "날짜순"}
+        data-active={currentOrder === "asc"}
         onClick={() => handleClickOrderBy("asc")}
       >
         Asc
