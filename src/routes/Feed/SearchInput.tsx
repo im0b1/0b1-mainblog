@@ -13,7 +13,7 @@ const SearchInput: React.FC<Props> = ({ ...props }) => {
       <input
         className="mid"
         type="text"
-        placeholder="입력..."
+        placeholder="검색어 입력..."
         {...props}
       />
     </StyledWrapper>
