@@ -12,8 +12,8 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `후원 페이지`,
+      href: "https://thankyouforyoursupport.vercel.app/",
     },
   ],
   // blog setting (required)
