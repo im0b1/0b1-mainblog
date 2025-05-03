@@ -1,6 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
-import { AiFillCodeSandboxCircle } from "react-icons/ai"
+import { PiBoneDuotone } from "react-icons/pi"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
@@ -19,7 +19,7 @@ const ServiceCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <pi/PiBoneDuotone className="icon" />
+            <PiBoneDuotone className="icon" />
             <div className="name">{project.name}</div>
           </a>
         ))}
