@@ -1,6 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
-import { PiBoneDuotone } from "react-icons/pi"
+import { FaBone } from "react-icons/fa6";
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
@@ -19,7 +19,7 @@ const ServiceCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <PiBoneDuotone className="icon" />
+            <FaBone className="icon" />
             <div className="name">{project.name}</div>
           </a>
         ))}
