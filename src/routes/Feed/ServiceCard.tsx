@@ -1,6 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
-import { FaBone } from "react-icons/fa6";
+import { FaBone } from "react-icons/fa6"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
