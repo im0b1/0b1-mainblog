@@ -1,6 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
-import { FaBone } from "react-icons/fa6" // 기존 Ai 아이콘 대신 FaBone 사용
+import { FaBone } from "react-icons/fa" // 수정된 경로
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
