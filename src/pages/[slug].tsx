@@ -22,7 +22,9 @@ export const getStaticPaths = async () => {
   const filteredPost = filterPosts(posts, filter)
 
   return {
-    paths: filteredPost.map((row) => `/${row.slug}`),
+    paths: filteredPost.map((row) => ({
+      params: { slug: encodeURIComponent(row.slug) }, // 한글 슬러그 인코딩
+    })),
     fallback: true,
   }
 }
@@ -35,7 +37,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   await queryClient.prefetchQuery(queryKey.posts(), () => feedPosts)
 
   const detailPosts = filterPosts(posts, filter)
-  const postDetail = detailPosts.find((t: any) => t.slug === slug)
+  const postDetail = detailPosts.find((t: any) => t.slug === decodeURIComponent(slug as string)) // 디코딩 처리
   const recordMap = await getRecordMap(postDetail?.id!)
 
   await queryClient.prefetchQuery(queryKey.post(`${slug}`), () => ({
