@@ -1,6 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
-import { AiFillCodeSandboxCircle } from "react-icons/ai"
+import { FaBone } from "react-icons/fa6" // 기존 Ai 아이콘 대신 FaBone 사용
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
@@ -19,7 +19,7 @@ const ServiceCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <AiFillCodeSandboxCircle className="icon" />
+            <FaBone className="icon" />
             <div className="name">{project.name}</div>
           </a>
         ))}
