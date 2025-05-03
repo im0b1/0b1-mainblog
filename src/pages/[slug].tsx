@@ -11,6 +11,7 @@ import { queryKey } from "src/constants/queryKey"
 import { dehydrate } from "@tanstack/react-query"
 import usePostQuery from "src/hooks/usePostQuery"
 import { FilterPostsOptions } from "src/libs/utils/notion/filterPosts"
+import slugify from 'slugify'
 
 const filter: FilterPostsOptions = {
   acceptStatus: ["Public", "PublicOnDetail"],
@@ -22,7 +23,7 @@ export const getStaticPaths = async () => {
   const filteredPost = filterPosts(posts, filter)
 
   return {
-    paths: filteredPost.map((row) => `/${row.slug}`),
+    paths: filteredPost.map((row) => `/${encodeURIComponent(row.slug)}`), // 한글 슬러그를 URL-safe 형식으로 인코딩
     fallback: true,
   }
 }
@@ -30,12 +31,15 @@ export const getStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug
 
+  // URL 디코딩
+  const decodedSlug = decodeURIComponent(slug as string)
+
   const posts = await getPosts()
   const feedPosts = filterPosts(posts)
   await queryClient.prefetchQuery(queryKey.posts(), () => feedPosts)
 
   const detailPosts = filterPosts(posts, filter)
-  const postDetail = detailPosts.find((t: any) => t.slug === slug)
+  const postDetail = detailPosts.find((t: any) => t.slug === decodedSlug)
   const recordMap = await getRecordMap(postDetail?.id!)
 
   await queryClient.prefetchQuery(queryKey.post(`${slug}`), () => ({
@@ -69,7 +73,7 @@ const DetailPage: NextPageWithLayout = () => {
     image: image,
     description: post.summary || "",
     type: post.type[0],
-    url: `${CONFIG.link}/${post.slug}`,
+    url: `${CONFIG.link}/${encodeURIComponent(post.slug)}`, // 한글 슬러그를 URL-safe 형식으로 인코딩
   }
 
   return (
