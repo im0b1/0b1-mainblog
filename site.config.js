@@ -3,8 +3,8 @@ const CONFIG = {
   profile: {
     name: "무뼈",
     image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "design & develop",
-    bio: "다양한 장르를 좋아하는 폴리매스형 백수입니다.",
+    role: "invest & improve",
+    bio: "다양한 장르를 파고드는 폴리매스형 백수입니다. 뼈빠지게 일하기 싫어서 투자를 주로 연구합니다.",
     email: "kickthebone@gmail.com",
     linkedin: "",
     github: "im0b1",
