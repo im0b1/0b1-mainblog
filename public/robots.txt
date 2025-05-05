@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://mizzu-creations.vercel.app/
+Host: https://0b1.vercel.app/
 
 # Sitemaps
-Sitemap: https://mizzu-creations.vercel.app/sitemap.xml
+Sitemap: https://0b1.vercel.app/sitemap.xml
