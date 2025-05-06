@@ -20,7 +20,7 @@ const CONFIG = {
   blog: {
     title: "무뼈의 뼈있는 이야기",
     description: "블로그에요!",
-    scheme: "system", // 'light' | 'dark' | 'system'
+    scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
