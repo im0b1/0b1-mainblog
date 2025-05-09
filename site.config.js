@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "무뼈의 뼈있는 블로그",
+    title: "무뼈의 뼈있는 이야기",
     description: "블로그에요!",
     scheme: "light", // 'light' | 'dark' | 'system'
   },
